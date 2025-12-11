@@ -15,7 +15,7 @@ void setup() {
 
   // Mensaje de bienvenida
   lcd.setCursor(0, 0); // Columna 0, Fila 0
-  lcd.print("Prueba I2C OK");
+  lcd.print("Hola Mundo!");
   
   lcd.setCursor(0, 1); // Columna 0, Fila 1
   lcd.print("Clase Lista!");
