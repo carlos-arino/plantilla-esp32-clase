@@ -9,7 +9,7 @@ En este curso utilizaremos un entorno de desarrollo profesional en la nube. No n
 > [!IMPORTANT]
 > **Requisitos Previos**
 > * Tener una cuenta de GitHub activa (es gratuita).
-> * Enlace al repositorio del profesor: [https://github.com/carlos-arino/plantilla-esp32-clase](https://github.com/carlos-arino/plantilla-esp32-clase)
+> * Enlace al repositorio: [https://github.com/carlos-arino/plantilla-esp32-clase](https://github.com/carlos-arino/plantilla-esp32-clase)
 
 ---
 
