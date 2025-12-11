@@ -1,9 +1,26 @@
 {
   "version": 1,
-  "author": "Tu Nombre",
+  "author": "Profesor ESP32",
   "editor": "wokwi",
   "parts": [
-    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} }
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { 
+      "type": "wokwi-lcd1602", 
+      "id": "lcd1", 
+      "top": -69.6, 
+      "left": 116.8, 
+      "attrs": { "pins": "i2c" } 
+    }
   ],
-  "connections": []
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    
+    [ "esp:GND.1", "lcd1:GND", "black", [ "h0" ] ],
+    [ "esp:5V", "lcd1:VCC", "red", [ "h0" ] ],
+    
+    [ "esp:21", "lcd1:SDA", "green", [ "h0" ] ],
+    [ "esp:22", "lcd1:SCL", "blue", [ "h0" ] ]
+  ],
+  "dependencies": {}
 }

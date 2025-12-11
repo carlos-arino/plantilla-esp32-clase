@@ -1,15 +1,32 @@
 #include <Arduino.h>
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+
+// Configuración de la pantalla LCD I2C (dirección 0x27, 16 columnas, 2 filas)
+LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 void setup() {
   Serial.begin(115200);
-  Serial.println("Hola Alumnos! El sistema funciona.");
-  pinMode(2, OUTPUT);
+  Serial.println("Iniciando sistema I2C...");
+
+  // Inicializar la pantalla
+  lcd.init();
+  lcd.backlight(); // ¡Importante! Enciende la luz de fondo
+
+  // Mensaje de bienvenida
+  lcd.setCursor(0, 0); // Columna 0, Fila 0
+  lcd.print("Prueba I2C OK");
+  
+  lcd.setCursor(0, 1); // Columna 0, Fila 1
+  lcd.print("Clase Lista!");
 }
 
 void loop() {
-  digitalWrite(2, HIGH);
-  delay(1000);
-  digitalWrite(2, LOW);
-  delay(1000);
-  Serial.println("Parpadeando...");
+  // Parpadeo del asterisco en la esquina superior derecha    
+  lcd.setCursor(15, 1);
+  lcd.print("*");
+  delay(500);
+  lcd.setCursor(15, 1);
+  lcd.print(" ");
+  delay(500);
 }
