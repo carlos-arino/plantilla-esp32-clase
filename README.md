@@ -14,9 +14,9 @@ En este curso utilizaremos un entorno de desarrollo profesional en la nube. No n
 ---
 
 ## Paso 1: Crear tu Proyecto (Copia la Plantilla)
-No trabajaremos sobre el código del profesor, sino sobre tu propia copia.
+No trabajaremos sobre el código del repositorio, sino sobre tu propia copia.
 
-1. Entra en el enlace del repositorio del profesor (arriba).
+1. Entra en el enlace del repositorio (arriba).
 2. Busca el botón verde **Use this template > Create a new repository**.
 3. **Repository name:** Ponle un nombre sin espacios (ej: `Ejercicio1-nombre-apellido`).
 4. Deja marcada la opción **Public** y pulsa **Create repository**.
